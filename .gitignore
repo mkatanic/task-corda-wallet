@@ -1,2 +1,5 @@
 # Dependency directories
-node_modules/
+vault-client/node_modules/
+
+#packege.lock
+vault-client/package-lock.json

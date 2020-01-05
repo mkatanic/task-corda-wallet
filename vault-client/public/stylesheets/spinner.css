@@ -1,0 +1,121 @@
+.circle-timer, .pie-timer {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  box-shadow: #ccc 0 0 25px;
+  -webkit-border-radius: 200px;
+  margin: 20px;
+  display: inline-block;
+}
+@-webkit-keyframes timer-spin {
+  0%   { -webkit-transform: rotateY(540deg);}
+  100% { -webkit-transform: rotateY(0deg);  }
+}
+@-webkit-keyframes timer-spin2 {
+  0%   { -webkit-transform: scale(0.6) rotate(0deg); }
+  100% { -webkit-transform: scale(1.0) rotate(360deg);  }
+}
+@-webkit-keyframes timer-slide {
+  0%   { -webkit-transform: rotate(-225deg); }
+  50%  { -webkit-transform: rotate(-45deg);  }
+  100% { -webkit-transform: rotate(-45deg);  }
+}
+@-webkit-keyframes timer-toggle {
+  0%  { opacity: 0; }
+  50% { opacity: 0; }
+  51% {
+    -webkit-transform: rotate(-45deg);
+    opacity: 1;
+  }
+  75% {
+    border-top-color: transparent;
+  }
+  76% {
+    border-top-color: #48f;
+  }
+  100% {
+    -webkit-transform: rotate(137deg);
+    opacity: 1;
+    border-top-color: #48f;
+  }
+}
+.timer-l, .timer-r {
+  border-radius: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  border: 30px solid #48f;
+  width: 140px;
+  height: 140px;
+  margin-left: -100px;
+  margin-top: -100px;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+.timer-l {
+  -webkit-animation-name: timer-slide;
+  -webkit-animation-timing-function: ease-in;
+  z-index: 5;
+  left: 0;
+}
+.timer-r {
+  -webkit-animation-name: timer-toggle;
+  -webkit-animation-timing-function: ease-out;
+}
+.timer-slot {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+}
+.pie-timer .timer-l, .pie-timer .timer-r {
+  height: 0;
+  width: 0;
+  margin: -100px 0 0 -100px;
+  border-width: 100px;
+  -webkit-animation-duration: 20s;
+}
+.spin-timer {
+  -webkit-animation-name: timer-spin;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  box-shadow: none;
+}
+.spin-timer2 {
+  -webkit-animation-name: timer-spin2;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+/* Bars */
+@-webkit-keyframes bar-slide {
+  0%   { width: 0%;   }
+  100% { width: 100%; }
+}
+.bar-timer {
+  margin: 30px 0;
+  height: 10px;
+  width: 220px;
+  border: 1px solid #48f;
+  position: relative;
+  -webkit-border-radius: 3px;
+  box-shadow: #acf 0px 0px 7px;
+}
+.bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #48f;
+  -webkit-animation-name: bar-slide;
+  -webkit-animation-duration: 45s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+}

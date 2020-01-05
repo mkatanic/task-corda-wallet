@@ -1,0 +1,76 @@
+extends layout
+
+block content
+  div
+    br
+    center
+      div.container(style='border:1px solid #CCC; font-size: 18px;')
+        h2(style='background:rgba(80,120,255,0.05); margin-left:-15px; margin-right:-15px;') Cash
+        each val in data.cash
+          div.row(style='border-bottom:1px dotted #CCA;')
+            div.col-md-3
+            div.col-md-3
+              span #{val.title}
+            div.col-md-3
+              span #{val.amount} #{val.symbol}
+            div.col-md-3
+        br
+      br
+      div.container(style='border:1px solid #CCC; font-size: 18px;')
+        h2(style='background:rgba(80,120,255,0.05); margin-left:-15px; margin-right:-15px;') Obligations
+        div.row
+          div.col-md-3
+          div.col-md-6
+            each val in data.obligations
+              p(class=(val.borrower === me ? 'redBox' : 'greenBox'))
+                b Lander: 
+                span #{val.lender}
+                br
+                b Borrower: 
+                span #{val.borrower}
+                br
+                b Amount: 
+                span #{val.amount}
+                br
+                b Paid: 
+                span #{val.paid} 
+                if val.borrower === me
+                  a.btn.btn-primary(href="/obligation/pay/#{val.linearId.id}") pay
+                br
+          div.col-md-3
+        div.row
+          div.col-md-3
+          div.col-md-6
+            form(action='/obligation/issue' method='POST' style='border:1px solid #CCC')
+              div.row
+                b Amount  
+                input(id='amount' style="width:100px" type='number' name='amount' value="100")
+              div.row
+                b Currency  
+                select(id='currency' style="width:100px" name='currency' selected="EUR")
+                  each val in data.currencies
+                    option #{val.symbol}
+              div.row
+                b Lender  
+                select(id='party' style="width:100px" name='party')
+                  each val in data.parties
+                    option #{val}
+              div.row
+                button.btn.btn-primary(type='submit' onclick='spinner()') Create obligation
+          div.col-md-3
+      br
+      div.container(style='border:1px solid #CCC; font-size: 18px;')
+        h2(style='background:rgba(80,120,255,0.05); margin-left:-15px; margin-right:-15px;') Issue Cash
+        form(action='/cash/issue', method='POST' style='padding:15px;')
+          div.row
+            div.col-md-3
+            div.col-md-2
+              input(id='amount' style="width:100%" type='number' name='amount' value="100")
+            div.col-md-2
+              select(id='currency' style="width:100%" name='currency' selected="EUR")
+                  each val in data.currencies
+                    option #{val.symbol}
+            div.col-md-2
+              button.btn.btn-primary(type='submit' onclick='spinner()') Issue cash
+            div.col-md-3
+        

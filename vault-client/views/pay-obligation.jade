@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  if obligation
+    center
+      div.row
+        div.col-md-3
+        div.col-md-6
+          p.greyBox
+            b Lander: 
+            span #{obligation.lender}
+            br
+            b Borrower: 
+            span #{obligation.borrower}
+            br
+            b Amount: 
+            span #{obligation.amount}
+            br
+            b Paid: 
+            span #{obligation.paid} 
+            br
+        div.col-md-3
+      div.row
+        form(action='/obligation/settle/#{obligation.linearId.id}', method='POST')
+          div.col-md-3
+          div.col-md-2
+            input(id='amount' style="width:100px" type='number' name='amount' value="100")
+          div.col-md-2
+            input(id='currency' style="width:100px" type='text' name='currency' value="#{obligation.currency}" readonly=true)
+          div.col-md-2
+            button.btn.btn-primary(type='submit' onclick='spinner()') Settle obligation
+          div.col-md-3
+      
