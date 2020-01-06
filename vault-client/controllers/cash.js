@@ -10,7 +10,7 @@ class CashController {
     //console.log('issue cash: ' + req.body.amount + ' ' + req.body.currency);
     try {
       var amount = parseInt(req.body.amount);
-      if (amount === undefined) {
+      if (!amount || amount < 0) {
         throw 'Wrong amount';
       }
       var msg = await this.cordaApi.issueCash(amount, req.body.currency);
@@ -27,7 +27,7 @@ class CashController {
     //console.log('transfer cash: ' + req.body.amount + ' ' + req.body.currency);
     try {
       var amount = parseInt(req.body.amount);
-      if (amount === undefined) {
+      if (!amount || amount < 0) {
         throw 'Wrong amount';
       }
       var msg = await this.cordaApi.transferCash(amount, req.body.currency, req.body.party);
