@@ -14,7 +14,7 @@ class CashController {
         throw 'Wrong amount';
       }
       var msg = await this.cordaApi.issueCash(req.body.amount, req.body.currency);
-      req.msg = msg;
+      req.msg = msg.amount + ' to ' + msg.owner;
       next();
     }
     catch (e) {
