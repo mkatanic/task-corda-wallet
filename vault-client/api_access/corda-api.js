@@ -34,6 +34,16 @@ class CordaAPI {
 		return rp(request);
 	}
 
+	transferCash(amount, currency, party) {
+		var request = {
+			uri: this.url + this.api + '/transfer-cash' + '?amount=' + amount 
+			+ '&currency=' + currency + '&party=' + party,
+			json: true,
+			timeout: this.timeout
+		}
+		return rp(request);
+	}
+
 	cashBalances() {
 		var request = {
 			uri: this.url + this.api + '/cash-balances',

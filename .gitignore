@@ -7,3 +7,4 @@ vault-client/package-lock.json
 #Build directories
 obligation-cordapp/kotlin-source/build/
 obligation-cordapp/java-source/build/
+obligation-cordapp/build

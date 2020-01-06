@@ -15,6 +15,26 @@ block content
               span #{val.amount} #{val.symbol}
             div.col-md-3
         br
+        div.row
+          div.col-md-3
+          div.col-md-6
+            form(action='/cash/transfer' method='POST' style='border:1px solid #CCC')
+              div.row
+                b Amount  
+                input(id='amount' style="width:100px" type='number' name='amount')
+              div.row
+                b Currency  
+                select(id='currency' style="width:100px" name='currency')
+                  each val in data.currencies
+                    option #{val.symbol}
+              div.row
+                b Recipient  
+                select(id='party' style="width:100px" name='party')
+                  each val in data.parties
+                    option #{val}
+              div.row
+                button.btn.btn-primary(type='submit' onclick='spinner()') Transfer cash
+          div.col-md-3
       br
       div.container(style='border:1px solid #CCC; font-size: 18px;')
         h2(style='background:rgba(80,120,255,0.05); margin-left:-15px; margin-right:-15px;') Obligations

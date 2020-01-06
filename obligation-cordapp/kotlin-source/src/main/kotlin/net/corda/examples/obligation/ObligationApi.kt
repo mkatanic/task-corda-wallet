@@ -11,6 +11,7 @@ import net.corda.examples.obligation.flows.TransferObligation
 import net.corda.finance.contracts.asset.Cash
 import net.corda.finance.workflows.getCashBalances
 import net.corda.finance.flows.CashIssueFlow
+import net.corda.finance.flows.CashPaymentFlow
 import java.util.*
 import javax.ws.rs.GET
 import javax.ws.rs.Path
@@ -97,6 +98,33 @@ class ObligationApi(val rpcOps: CordaRPCOps) {
         } catch (e: Exception) {
             e.cause?.printStackTrace()
             e.printStackTrace()
+            BAD_REQUEST to e.message
+        }
+
+        // 3. Return the response.
+        return Response.status(status).entity(message).build()
+    }
+
+    @GET
+    @Path("transfer-cash")
+    fun transferCash(@QueryParam(value = "amount") amount: Int,
+                      @QueryParam(value = "currency") currency: String,
+                     @QueryParam(value = "party") party: String): Response {
+
+        // 1. Prepare issue request.
+        val transferAmount = Amount(amount.toLong() * 100, Currency.getInstance(currency))
+        val notary = rpcOps.notaryIdentities().firstOrNull() ?: throw IllegalStateException("Could not find a notary.")
+        val otherParty = rpcOps.partiesFromName(party, exactMatch = false).singleOrNull()
+                ?: throw IllegalStateException("Couldn't lookup node identity for $party.")
+        val transferRequest = CashPaymentFlow.PaymentRequest(transferAmount, otherParty, false, notary = notary)
+
+        // 2. Start flow and wait for response.
+        val (status, message) = try {
+            val flowHandle = rpcOps.startFlowDynamic(CashPaymentFlow::class.java, transferRequest)
+            val result = flowHandle.returnValue.getOrThrow()
+            flowHandle.close()
+            CREATED to "Paid $transferAmount to $party."
+        } catch (e: Exception) {
             BAD_REQUEST to e.message
         }
 

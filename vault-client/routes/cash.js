@@ -11,4 +11,7 @@ var homeController = new HomeController.HomeController(cordaApi);
 /* POST self issue cash. */
 router.post('/issue', cashController.issueCash.bind(cashController), homeController.home.bind(homeController) );
 
+/* POST transfer cash. */
+router.post('/transfer', cashController.transferCash.bind(cashController), homeController.home.bind(homeController) );
+
 module.exports = router;
