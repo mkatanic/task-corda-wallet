@@ -1,0 +1,187 @@
+[INFO ] 2020-01-06T10:51:38,431Z [main] manifests.Manifests. - 123 attributes loaded from 172 stream(s) in 283ms, 123 saved, 2593 ignored: ["ActiveMQ-Version", "Agent-Class", "Ant-Version", "Application-Class", "Application-ID", "Application-Library-Allowable-Codebase", "Application-Name", "Application-Version", "Archiver-Version", "Automatic-Module-Name", "Bnd-LastModified", "Branch", "Build-Date", "Build-Host", "Build-Id", "Build-Java-Version", "Build-Jdk", "Build-Job", "Build-Number", "Build-Time", "Build-Timestamp", "Build-Version", "Built-By", "Built-OS", "Built-Status", "Bundle-Activator", "Bundle-Category", "Bundle-ClassPath", "Bundle-Copyright", "Bundle-Description", "Bundle-DocURL", "Bundle-License", "Bundle-ManifestVersion", "Bundle-Name", "Bundle-NativeCode", "Bundle-RequiredExecutionEnvironment", "Bundle-SymbolicName", "Bundle-Vendor", "Bundle-Version", "CLDR-Version", "Caller-Allowable-Codebase", "Can-Redefine-Classes", "Can-Retransform-Classes", "Can-Set-Native-Method-Prefix", "Caplets", "Change", "Class-Path", "Codebase", "Corda-Platform-Version", "Corda-Release-Version", "Corda-Revision", "Corda-Vendor", "Created-By", "DynamicImport-Package", "Eclipse-BuddyPolicy", "Eclipse-LazyStart", "Export-Package", "Extension-Name", "Fragment-Host", "Git-Revision", "Git-Url", "Gradle-Version", "Hibernate-JpaVersion", "Hibernate-VersionFamily", "Implementation-Build", "Implementation-Build-Date", "Implementation-Build-Id", "Implementation-Title", "Implementation-URL", "Implementation-Url", "Implementation-Vendor", "Implementation-Vendor-Id", "Implementation-Version", "Import-Package", "Include-Resource", "JCabi-Build", "JCabi-Date", "JCabi-Version", "JVM-Args", "Java-Agents", "Java-Vendor", "Java-Version", "Kotlin-Runtime-Component", "Kotlin-Version", "Liquibase-Package", "Log4jReleaseKey", "Log4jReleaseManager", "Log4jReleaseVersion", "Main-Class", "Main-class", "Major-Version", "Manifest-Version", "Min-Java-Version", "Min-Update-Version", "Module-Email", "Module-Origin", "Module-Owner", "Module-Source", "Multi-Release", "Originally-Created-By", "Os-Arch", "Os-Name", "Os-Version", "Permissions", "Premain-Class", "Private-Package", "Provide-Capability", "Require-Capability", "SCM-Revision", "SCM-url", "Scm-Connection", "Scm-Revision", "Scm-Url", "Service-Component", "Specification-Title", "Specification-Vendor", "Specification-Version", "System-Properties", "Tool", "Trusted-Library", "URL", "X-Compile-Source-JDK", "X-Compile-Target-JDK"]
+[INFO ] 2020-01-06T10:51:38,625Z [main] BasicInfo. - Logs can be found in                    : /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/Notary/logs
+[INFO ] 2020-01-06T10:51:41,049Z [main] subcommands.ValidateConfigurationCli. - Actual configuration:
+{
+    "additionalNodeInfoPollingFrequencyMsec" : 5000,
+    "additionalP2PAddresses" : [],
+    "attachmentCacheBound" : 1024,
+    "baseDirectory" : "/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/Notary",
+    "blacklistedAttachmentSigningKeys" : [],
+    "certificateChainCheckPolicies" : [],
+    "cordappSignerKeyFingerprintBlacklist" : [
+        "56CA54E803CB87C8472EBD3FBC6A2F1876E814CEEBF74860BD46997F40729367",
+        "83088052AF16700457AE2C978A7D8AC38DD6A7C713539D00B897CD03A5E5D31D",
+        "6F6696296C3F58B55FB6CA865A025A3A6CC27AD17C4AFABA1E8EF062E0A82739"
+    ],
+    "crlCheckSoftFail" : true,
+    "dataSourceProperties" : "*****",
+    "database" : {
+        "exportHibernateJMXStatistics" : false,
+        "initialiseAppSchema" : "UPDATE",
+        "initialiseSchema" : true,
+        "mappedSchemaCacheSize" : 100,
+        "transactionIsolationLevel" : "REPEATABLE_READ"
+    },
+    "detectPublicIp" : false,
+    "devMode" : true,
+    "emailAddress" : "admin@company.com",
+    "extraNetworkMapKeys" : [],
+    "flowMonitorPeriodMillis" : {
+        "nanos" : 0,
+        "seconds" : 60
+    },
+    "flowMonitorSuspensionLoggingThresholdMillis" : {
+        "nanos" : 0,
+        "seconds" : 60
+    },
+    "flowTimeout" : {
+        "backoffBase" : 1.8,
+        "maxRestartCount" : 6,
+        "timeout" : {
+            "nanos" : 0,
+            "seconds" : 30
+        }
+    },
+    "jarDirs" : [],
+    "jmxReporterType" : "JOLOKIA",
+    "keyStorePassword" : "*****",
+    "lazyBridgeStart" : true,
+    "myLegalName" : "O=Notary,L=London,C=GB",
+    "networkParameterAcceptanceSettings" : {
+        "autoAcceptEnabled" : true,
+        "excludedAutoAcceptableParameters" : []
+    },
+    "noLocalShell" : false,
+    "notary" : {
+        "etaMessageThresholdSeconds" : 10,
+        "validating" : false
+    },
+    "p2pAddress" : "localhost:10002",
+    "rpcSettings" : {
+        "address" : "localhost:10003",
+        "adminAddress" : "localhost:10043",
+        "standAloneBroker" : false,
+        "useSsl" : false
+    },
+    "rpcUsers" : [],
+    "security" : {
+        "authService" : {
+            "dataSource" : {
+                "passwordEncryption" : "NONE",
+                "type" : "INMEMORY",
+                "users" : [
+                    {
+                        "ignoresFallbacks" : false,
+                        "resolved" : true,
+                        "value" : {
+                            "loadFactor" : 0.75,
+                            "modCount" : 3,
+                            "size" : 3,
+                            "table" : {},
+                            "threshold" : 3
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "trustStorePassword" : "*****",
+    "useTestClock" : false,
+    "verifierType" : "InMemory"
+}
+
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - Vendor: Corda Open Source
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - Release: 4.3
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - Platform Version: 5
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - Revision: d679784a179e95c57696d13c95beeccfe350d7d5
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - PID: 26876
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - Main class: /home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-node-4.3.jar
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - CommandLine Args: -Xmx512m -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+CrashOnOutOfMemoryError -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -javaagent:drivers/jolokia-jvm-1.6.0-agent.jar=port=7005,logHandlerClass=net.corda.node.JolokiaSlf4jAdapter -javaagent:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/quasar-core-0.7.10-jdk8.jar=x(antlr**;bftsmart**;co.paralleluniverse**;com.codahale**;com.esotericsoftware**;com.fasterxml**;com.google**;com.ibm**;com.intellij**;com.jcabi**;com.nhaarman**;com.opengamma**;com.typesafe**;com.zaxxer**;de.javakaffee**;groovy**;groovyjarjarantlr**;groovyjarjarasm**;io.atomix**;io.github**;io.netty**;jdk**;junit**;kotlin**;net.bytebuddy**;net.i2p**;org.apache**;org.assertj**;org.bouncycastle**;org.codehaus**;org.crsh**;org.dom4j**;org.fusesource**;org.h2**;org.hamcrest**;org.hibernate**;org.jboss**;org.jcp**;org.joda**;org.junit**;org.mockito**;org.objectweb**;org.objenesis**;org.slf4j**;org.w3c**;org.xml**;org.yaml**;reflectasm**;rx**;org.jolokia**;com.lmax**;picocli**;liquibase**;com.github.benmanes**;org.json**;org.postgresql**;nonapi.io.github.classgraph**) -Dvisualvm.display.name=Corda -Djava.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3 -Dcapsule.app=net.corda.node.Corda_4.3 -Dname=Notary -Dcapsule.dir=/home/mirko/.capsule/apps/net.corda.node.Corda_4.3 -Dcapsule.jar=/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/Notary/corda.jar
+[INFO ] 2020-01-06T10:51:41,105Z [main] internal.Node. - bootclasspath: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes
+[INFO ] 2020-01-06T10:51:41,134Z [main] internal.Node. - classpath: /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/Notary/corda.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/tools.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-shell-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-rpc-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-node-api-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-tools-cliutils-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-common-configuration-parsing-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-common-validation-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-common-logging-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-confidential-identities-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/log4j-slf4j-impl-2.11.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/log4j-web-2.11.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jul-to-slf4j-1.7.26.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-jackson-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-serialization-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-core-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kotlin-stdlib-jdk8-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jackson-module-kotlin-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kotlin-reflect-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/quasar-core-0.7.10-jdk8.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kryo-serializers-0.43.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kryo-4.0.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jimfs-1.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/metrics-new-relic-1.1.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/guava-28.0-jre.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/caffeine-2.7.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/disruptor-3.4.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/commons-collections4-4.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-amqp-protocol-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-server-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-jdbc-store-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-journal-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-jms-client-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-core-client-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-commons-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-core-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-config-ogdl-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/commons-beanutils-1.9.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jcabi-manifests-1.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/forms_rt-7.0.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/metrics-jmx-4.1.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/config-1.3.4.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/h2-1.4.199.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/postgresql-42.2.5.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/HikariCP-3.3.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/hibernate-java8-5.4.3.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/hibernate-core-5.4.3.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/okhttp-3.14.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/picocli-3.9.6.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/library-master-v1.1-beta-g6215ec8-87.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/commons-codec-1.13.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/copycat-client-1.2.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/copycat-server-1.2.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/catalyst-netty-1.1.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jolokia-jvm-1.6.1-agent.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kotlin-stdlib-jre8-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/proton-j-0.33.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/classgraph-4.8.41.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/liquibase-core-3.6.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jackson-datatype-jsr310-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jackson-databind-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/liquibase-slf4j-2.0.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/crash.connectors.ssh-810d2b774b85d4938be01b9b65e29e4fddbc450b.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/crash.shell-810d2b774b85d4938be01b9b65e29e4fddbc450b.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jansi-1.18.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/log4j-core-2.11.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/commons-io-2.6.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jcabi-log-0.14.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/metrics-core-4.1.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-cache-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-crypto-hash-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-crypto-cipher-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-config-core-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-event-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-crypto-core-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/shiro-lang-1.4.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/copycat-protocol-1.2.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/catalyst-transport-1.1.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jcl-over-slf4j-1.7.26.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/mina-core-2.0.16.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/catalyst-concurrent-1.1.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/sshd-pam-0.11.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/sshd-core-1.6.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/catalyst-serializer-1.1.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/catalyst-buffer-1.1.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/catalyst-common-1.1.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/slf4j-api-1.7.26.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/log4j-api-2.11.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kotlin-stdlib-jdk7-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kotlin-stdlib-jre7-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kotlin-stdlib-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/reflectasm-1.11.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/minlog-1.3.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/objenesis-2.5.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/failureaccess-1.0.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jsr305-3.0.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/checker-qual-2.8.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/error_prone_annotations-2.3.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/j2objc-annotations-1.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/animal-sniffer-annotations-1.17.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/commons-collections-3.2.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-native-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/hibernate-commons-annotations-5.1.0.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jboss-logging-3.3.2.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/artemis-selector-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-handler-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-codec-http-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-codec-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-transport-native-kqueue-4.1.22.Final-osx-x86_64.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-transport-native-unix-common-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-transport-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-buffer-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-resolver-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/netty-common-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/geronimo-json_1.0_spec-1.0-alpha-1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jgroups-3.6.13.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/johnzon-core-0.9.5.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/forms-1.1-preview.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jdom-1.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/javax.persistence-api-2.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/javassist-3.24.0-GA.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/byte-buddy-1.9.10.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/antlr-2.7.7.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jandex-2.0.5.Final.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/classmate-1.3.4.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jaxb-runtime-2.3.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jaxb-api-2.3.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/javax.activation-api-1.2.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/dom4j-2.1.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/okio-1.17.2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jolokia-core-1.6.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/json-simple-1.1.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/newrelic-api-3.10.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/HdrHistogram-2.1.9.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/LatencyUtils-2.0.3.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/rxjava-1.3.8.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/commons-lang3-3.9.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/eddsa-0.2.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/bcpkix-jdk15on-1.60.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/bcprov-jdk15on-1.60.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/asm-7.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/snappy-0.4.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jackson-dataformat-yaml-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/snakeyaml-1.23.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jackson-annotations-2.9.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jackson-core-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/crash.cli-810d2b774b85d4938be01b9b65e29e4fddbc450b.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/groovy-all-1.8.9.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/kotlin-stdlib-common-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/annotations-13.0.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/txw2-2.3.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/istack-commons-runtime-3.0.7.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/stax-ex-1.8.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/FastInfoset-1.2.15.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/geronimo-jms_2.0_spec-1.0-alpha-2.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/jpam-1.1.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/corda-node-4.3.jar:/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/Notary/drivers/jolokia-jvm-1.6.0-agent.jar:drivers/jolokia-jvm-1.6.0-agent.jar:/home/mirko/.capsule/apps/net.corda.node.Corda_4.3/quasar-core-0.7.10-jdk8.jar
+[INFO ] 2020-01-06T10:51:41,134Z [main] internal.Node. - VM OpenJDK 64-Bit Server VM Private Build 25.232-b09
+[INFO ] 2020-01-06T10:51:41,135Z [main] internal.Node. - Machine: mirko-G5
+[INFO ] 2020-01-06T10:51:41,135Z [main] internal.Node. - Working Directory: /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/Notary
+[INFO ] 2020-01-06T10:51:41,451Z [main] internal.Node. - Debug port: dt_socket:5005
+[INFO ] 2020-01-06T10:51:41,451Z [main] internal.Node. - Starting as node on localhost:10002
+[INFO ] 2020-01-06T10:51:41,677Z [main] cordapp.JarScanningCordappLoader. - Looking for CorDapps in [/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/Notary/cordapps]
+[INFO ] 2020-01-06T10:51:41,702Z [main] cordapp.JarScanningCordappLoader. - No CorDapp paths provided
+[WARN ] 2020-01-06T10:51:43,339Z [main] internal.Node. - This node is running in development mode!  This is not safe for production deployment.
+[INFO ] 2020-01-06T10:51:43,517Z [main] internal.Node. - Node starting up ...
+[WARN ] 2020-01-06T10:51:44,064Z [main] plugin.PluginContext. - No version found will use unknown value instead
+[INFO ] 2020-01-06T10:51:44,078Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+[INFO ] 2020-01-06T10:51:44,079Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+[INFO ] 2020-01-06T10:51:44,081Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+[INFO ] 2020-01-06T10:51:44,082Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+[INFO ] 2020-01-06T10:51:44,090Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+[INFO ] 2020-01-06T10:51:44,092Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+[INFO ] 2020-01-06T10:51:44,092Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+[INFO ] 2020-01-06T10:51:44,093Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2020-01-06T10:51:44,094Z [main] plugin.PluginManager. - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2020-01-06T10:51:44,170Z [main] ssh.SSHPlugin. - Could not boot SSHD due to missing due to missing port configuration
+[INFO ] 2020-01-06T10:51:44,170Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+[INFO ] 2020-01-06T10:51:44,170Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+[INFO ] 2020-01-06T10:51:44,170Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+[INFO ] 2020-01-06T10:51:44,215Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+[INFO ] 2020-01-06T10:51:44,218Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+[INFO ] 2020-01-06T10:51:44,228Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+[INFO ] 2020-01-06T10:51:44,230Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2020-01-06T10:51:44,232Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2020-01-06T10:51:44,232Z [main] plugin.PluginManager. - Initialized plugin Plugin[type=CordaAuthenticationPlugin,interface=AuthenticationPlugin]
+[INFO ] 2020-01-06T10:51:50,112Z [main] internal.Node. - Loaded network parameters: NetworkParameters {
+      minimumPlatformVersion=5
+      notaries=[NotaryInfo(identity=O=Notary, L=London, C=GB, validating=false)]
+      maxMessageSize=10485760
+      maxTransactionSize=524288000
+      whitelistedContractImplementations {
+        
+      }
+      eventHorizon=PT720H
+      packageOwnership {
+        
+      }
+      modifiedTime=2020-01-02T18:29:12.512Z
+      epoch=1
+  }
+[INFO ] 2020-01-06T10:51:50,173Z [main] hikari.HikariDataSource. - HikariPool-1 - Starting...
+[INFO ] 2020-01-06T10:51:50,808Z [main] hikari.HikariDataSource. - HikariPool-1 - Start completed.
+[INFO ] 2020-01-06T10:51:55,318Z [main] jvm.JdbcExecutor. - SELECT MD5SUM FROM PUBLIC.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL
+[INFO ] 2020-01-06T10:51:55,332Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOG
+[INFO ] 2020-01-06T10:51:55,333Z [main] changelog.StandardChangeLogHistoryService. - Reading from PUBLIC.DATABASECHANGELOG
+[INFO ] 2020-01-06T10:51:55,333Z [main] jvm.JdbcExecutor. - SELECT * FROM PUBLIC.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[INFO ] 2020-01-06T10:51:55,346Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK
+[INFO ] 2020-01-06T10:51:55,346Z [main] jvm.JdbcExecutor. - SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK
+[INFO ] 2020-01-06T10:51:55,454Z [main] jvm.JdbcExecutor. - SELECT LOCKED FROM PUBLIC.DATABASECHANGELOGLOCK WHERE ID=1
+[INFO ] 2020-01-06T10:51:55,465Z [main] lockservice.StandardLockService. - Successfully acquired change log lock
+[INFO ] 2020-01-06T10:51:55,473Z [main] lockservice.StandardLockService. - Successfully released change log lock
+[INFO ] 2020-01-06T10:51:55,499Z [main] internal.Node. - Connected to H2 database.
+[INFO ] 2020-01-06T10:51:55,542Z [main] persistence.HibernateConfiguration. - Init HibernateConfiguration for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), NodeNotarySchemaV1(name=net.corda.node.services.transactions.NodeNotarySchema, version=1)]
+[INFO ] 2020-01-06T10:51:55,547Z [main] persistence.HibernateConfiguration. - Creating session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), NodeNotarySchemaV1(name=net.corda.node.services.transactions.NodeNotarySchema, version=1)]
+[INFO ] 2020-01-06T10:51:57,674Z [main] persistence.HibernateConfiguration. - Created session factory for schemas: [CommonSchemaV1(name=net.corda.core.schemas.CommonSchema, version=1), VaultSchemaV1(name=net.corda.node.services.vault.VaultSchema, version=1), NodeInfoSchemaV1(name=net.corda.node.internal.schemas.NodeInfoSchema, version=1), NodeCoreV1(name=net.corda.node.services.schema.NodeSchemaService$NodeCore, version=1), NodeNotarySchemaV1(name=net.corda.node.services.transactions.NodeNotarySchema, version=1)]
+[INFO ] 2020-01-06T10:51:58,092Z [main] network.NetworkMapUpdater. - Auto-accept enabled for network parameter changes which modify only: [epoch, modifiedTime, packageOwnership, whitelistedContractImplementations]
+[INFO ] 2020-01-06T10:51:58,153Z [main] security.RPCSecurityManagerImpl. - Constructing realm from list of users in config [User(user1, permissions=[ALL])]
+[INFO ] 2020-01-06T10:51:58,199Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10008], legalIdentitiesAndCerts=[O=PartyB, L=New York, C=US], platformVersion=5, serial=1577989750227)
+[INFO ] 2020-01-06T10:51:58,225Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2020-01-06T10:51:58,238Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10011], legalIdentitiesAndCerts=[O=PartyC, L=Paris, C=FR], platformVersion=5, serial=1577989748021)
+[INFO ] 2020-01-06T10:51:58,252Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2020-01-06T10:51:58,257Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10002], legalIdentitiesAndCerts=[O=Notary, L=London, C=GB], platformVersion=5, serial=1577989750504)
+[INFO ] 2020-01-06T10:51:58,269Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2020-01-06T10:51:58,273Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Adding node with info: NodeInfo(addresses=[localhost:10005], legalIdentitiesAndCerts=[O=PartyA, L=London, C=GB], platformVersion=5, serial=1577989750734)
+[INFO ] 2020-01-06T10:51:58,285Z [RxIoScheduler-2] network.PersistentNetworkMapCache. - Previous node was identical to incoming one - doing nothing
+[INFO ] 2020-01-06T10:51:58,664Z [main] BasicInfo. - Advertised P2P messaging addresses      : localhost:10002
+[INFO ] 2020-01-06T10:51:58,670Z [main] BasicInfo. - RPC connection address                  : localhost:10003
+[INFO ] 2020-01-06T10:51:58,670Z [main] BasicInfo. - RPC admin connection address            : localhost:10043
+[INFO ] 2020-01-06T10:51:59,455Z [main] messaging.ArtemisMessagingServer. - P2P messaging server listening on 0.0.0.0:10002
+[INFO ] 2020-01-06T10:51:59,616Z [main] internal.ArtemisMessagingClient. - Connecting to message broker: localhost:10002
+[INFO ] 2020-01-06T10:52:00,037Z [main] internal.ArtemisMessagingClient. - Connecting to message broker: localhost:10002
+[INFO ] 2020-01-06T10:52:00,199Z [main] messaging.P2PMessagingClient. - Connecting to message broker: localhost:10002
+[WARN ] 2020-01-06T10:52:00,407Z [main] utilities.AppendOnlyPersistentMapBase. - Double insert in net.corda.node.utilities.AppendOnlyPersistentMap for entity class class net.corda.node.internal.DBNetworkParametersStorage$PersistentNetworkParameters key 8410903E29DB60BCE61A49D105F128D6C558EFC28358420119392DC428BDADCA, not inserting the second time
+[INFO ] 2020-01-06T10:52:00,427Z [Thread-3 (ActiveMQ-client-global-threads)] bridging.BridgeControlListener. - Received bridge control message NodeToBridgeSnapshot(nodeIdentity=O=Notary, L=London, C=GB, inboxQueues=[p2p.inbound.DL6MJZP6CoffR54rsyM8C6mtbur4yxz6cqQ4sjfCYsxPFf], sendQueues=[])
+[INFO ] 2020-01-06T10:52:00,478Z [main] utilities.NotaryLoader. - Starting notary service: class net.corda.node.services.transactions.SimpleNotaryService
+[INFO ] 2020-01-06T10:52:00,485Z [main] notary.SinglePartyNotaryService. - Starting notary in non-validating mode
+[INFO ] 2020-01-06T10:52:01,698Z [main] statemachine.SingleThreadedStateMachineManager. - Node ready, info: NodeInfo(addresses=[localhost:10002], legalIdentitiesAndCerts=[O=Notary, L=London, C=GB], platformVersion=5, serial=1577989750504)
+[INFO ] 2020-01-06T10:52:01,821Z [Node thread-1] internal.Node. - Registering JMX reporter:
+[INFO ] 2020-01-06T10:52:01,823Z [main] BasicInfo. - Loaded 0 CorDapp(s)                     : 
+[INFO ] 2020-01-06T10:52:01,824Z [Node thread-1] internal.Node. - Registering Jolokia JMX reporter:
+[INFO ] 2020-01-06T10:52:01,826Z [main] BasicInfo. - Node for "Notary" started up and registered in 27.24 sec
+[INFO ] 2020-01-06T10:52:01,828Z [main] rpc.RPCServer. - Starting RPC server with configuration RPCServerConfiguration(rpcThreadPoolSize=4, reapInterval=PT1S, deduplicationCacheExpiry=PT24H)

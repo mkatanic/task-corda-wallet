@@ -1,0 +1,148 @@
+[INFO ] 2020-01-06T10:51:38,149Z [main] webserver.CmdLineOptions.loadConfig - Config:
+{
+    # hardcoded value
+    "baseDirectory" : "/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC",
+    # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 1
+    "devMode" : true,
+    # web-reference.conf @ jar:file:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-testserver-impl-4.3.jar!/web-reference.conf: 2
+    "keyStorePassword" : "cordacadevpass",
+    # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 2
+    "myLegalName" : "O=PartyC,L=Paris,C=FR",
+    # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 3
+    "p2pAddress" : "localhost:10011",
+    # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 4
+    "rpcSettings" : {
+        # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 5
+        "address" : "localhost:10012",
+        # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 6
+        "adminAddress" : "localhost:10052"
+    },
+    # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 8
+    "security" : {
+        # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 9
+        "authService" : {
+            # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 10
+            "dataSource" : {
+                # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 11
+                "type" : "INMEMORY",
+                # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 12
+                "users" : [
+                    # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 13
+                    {
+                        # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 14
+                        "password" : "test",
+                        # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 15
+                        "permissions" : [
+                            # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 16
+                            "ALL"
+                        ],
+                        # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 18
+                        "user" : "user1"
+                    }
+                ]
+            }
+        }
+    },
+    # web-reference.conf @ jar:file:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-testserver-impl-4.3.jar!/web-reference.conf: 3
+    "trustStorePassword" : "trustpass",
+    # web-reference.conf @ jar:file:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-testserver-impl-4.3.jar!/web-reference.conf: 1
+    "useHTTPS" : false,
+    # /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/web-server.conf: 24
+    "webAddress" : "localhost:10013"
+}
+
+[WARN ] 2020-01-06T10:51:41,780Z [main] internal.config.defaultToOldPath - Config key user has been deprecated and will be removed in a future release. Use username instead
+[INFO ] 2020-01-06T10:51:41,850Z [main] Main.main - Main class: /home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-testserver-impl-4.3.jar
+[INFO ] 2020-01-06T10:51:41,872Z [main] Main.main - CommandLine Args: -Xmx200m -XX:+UseG1GC -javaagent:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/quasar-core-0.7.10-jdk8.jar -Dvisualvm.display.name=Corda -Djava.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3 -Dcapsule.app=net.corda.webserver.WebServer_4.3 -Dname=PartyC -DWebserver -Dcapsule.dir=/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3 -Dcapsule.jar=/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/corda-testserver.jar
+[INFO ] 2020-01-06T10:51:41,879Z [main] Main.main - Application Args: 
+[INFO ] 2020-01-06T10:51:41,884Z [main] Main.main - bootclasspath: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes
+[INFO ] 2020-01-06T10:51:41,889Z [main] Main.main - classpath: /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/corda-testserver.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-rpc-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-tools-cliutils-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-node-api-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-jackson-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-serialization-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-core-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-common-logging-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-webapp-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-servlet-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-container-jetty-http-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-security-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-server-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javax.servlet-api-4.0.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/commons-fileupload-1.4.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/log4j-slf4j-impl-2.11.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/log4j-core-2.11.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jopt-simple-5.0.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-continuation-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-container-servlet-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-container-servlet-core-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-server-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-media-json-jackson-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kotlinx-html-jvm-0.6.12.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-common-configuration-parsing-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-common-validation-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kotlin-stdlib-jdk8-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-module-kotlin-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kotlin-reflect-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/quasar-core-0.7.10-jdk8.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/guava-28.0-jre.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jsr305-3.0.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jcl-over-slf4j-1.7.26.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/HikariCP-3.3.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/liquibase-core-3.6.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jcabi-manifests-1.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jcabi-log-0.14.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/slf4j-api-1.7.26.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/caffeine-2.7.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/rxjava-1.3.8.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/commons-lang3-3.9.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/eddsa-0.2.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/bcpkix-jdk15on-1.60.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/bcprov-jdk15on-1.60.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/hibernate-core-5.4.3.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javax.persistence-api-2.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/classgraph-4.8.41.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-dataformat-yaml-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-datatype-jsr310-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/picocli-3.9.6.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-amqp-protocol-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-server-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/commons-io-2.6.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jansi-1.18.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/config-1.3.4.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-xml-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/log4j-api-2.11.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-media-jaxb-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-client-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-common-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-entity-filtering-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javax.ws.rs-api-2.0.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javax.annotation-api-1.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/hk2-locator-2.5.0-b30.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/hk2-api-2.5.0-b30.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javax.inject-2.5.0-b30.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/validation-api-1.1.0.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-http-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-io-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jetty-util-9.4.19.v20190610.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-jaxrs-json-provider-2.8.4.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-jaxrs-base-2.8.4.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-module-jaxb-annotations-2.8.4.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-databind-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-annotations-2.9.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kotlin-stdlib-jdk7-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kotlin-stdlib-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/checker-qual-2.8.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/error_prone_annotations-2.3.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/hibernate-commons-annotations-5.1.0.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-jms-client-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-jdbc-store-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-core-client-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-journal-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-commons-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-native-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jboss-logging-3.3.2.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javassist-3.24.0-GA.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/byte-buddy-1.9.10.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/antlr-2.7.7.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jandex-2.0.5.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/classmate-1.3.4.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jaxb-runtime-2.3.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jaxb-api-2.3.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javax.activation-api-1.2.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/dom4j-2.1.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/metrics-core-3.2.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/HdrHistogram-2.1.9.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/LatencyUtils-2.0.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kryo-4.0.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kryo-serializers-0.42.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/commons-collections4-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/commons-beanutils-1.9.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/proton-j-0.33.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/liquibase-slf4j-2.0.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/reflectasm-1.11.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/asm-7.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/snappy-0.4.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/snakeyaml-1.23.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jackson-core-2.9.7.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/failureaccess-1.0.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/j2objc-annotations-1.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/animal-sniffer-annotations-1.17.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jersey-guava-2.25.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/osgi-resource-locator-1.0.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/hk2-utils-2.5.0-b30.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/aopalliance-repackaged-2.5.0-b30.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/kotlin-stdlib-common-1.2.71.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/annotations-13.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/txw2-2.3.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/istack-commons-runtime-3.0.7.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/stax-ex-1.8.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/FastInfoset-1.2.15.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/minlog-1.3.0.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/objenesis-2.5.1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/commons-collections-3.2.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/jgroups-3.6.13.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/geronimo-json_1.0_spec-1.0-alpha-1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/johnzon-core-0.9.5.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-transport-native-epoll-4.1.22.Final-linux-x86_64.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-transport-native-kqueue-4.1.22.Final-osx-x86_64.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-codec-http-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-handler-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-codec-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-transport-native-unix-common-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-transport-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-buffer-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-resolver-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/netty-common-4.1.22.Final.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/artemis-selector-2.6.2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/javax.inject-1.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/geronimo-jms_2.0_spec-1.0-alpha-2.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/corda-testserver-impl-4.3.jar:/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/cordapps/corda-confidential-identities-4.3.jar:/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/cordapps/java-source-0.1.jar:/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/cordapps/corda-finance-workflows-4.3.jar:/home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC/cordapps/corda-finance-contracts-4.3.jar:/home/mirko/.capsule/apps/net.corda.webserver.WebServer_4.3/quasar-core-0.7.10-jdk8.jar
+[INFO ] 2020-01-06T10:51:41,894Z [main] Main.main - VM OpenJDK 64-Bit Server VM Private Build 25.232-b09
+[INFO ] 2020-01-06T10:51:41,913Z [main] Main.main - Machine: mirko-G5
+[INFO ] 2020-01-06T10:51:41,927Z [main] Main.main - Working Directory: /home/mirko/dev/corda/samples/obligation-cordapp/java-source/build/nodes/PartyC
+[INFO ] 2020-01-06T10:51:41,957Z [main] Main.main - Starting as webserver on localhost:10013
+[INFO ] 2020-01-06T10:51:42,129Z [main] BasicInfo.logAndMaybePrint - Starting as webserver: localhost:10013
+[INFO ] 2020-01-06T10:51:47,771Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:51:52,641Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 4628 msec
+[INFO ] 2020-01-06T10:51:53,645Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:51:53,664Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 16 msec
+[INFO ] 2020-01-06T10:51:54,779Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:51:54,857Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 51 msec
+[INFO ] 2020-01-06T10:51:56,093Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:51:56,140Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 43 msec
+[INFO ] 2020-01-06T10:51:57,525Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:51:57,532Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 3 msec
+[INFO ] 2020-01-06T10:51:59,058Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:51:59,096Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 35 msec
+[INFO ] 2020-01-06T10:52:00,792Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:00,897Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 102 msec
+[INFO ] 2020-01-06T10:52:02,781Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:02,797Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 13 msec
+[INFO ] 2020-01-06T10:52:04,890Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:04,894Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 2 msec
+[INFO ] 2020-01-06T10:52:07,219Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:07,232Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 7 msec
+[INFO ] 2020-01-06T10:52:09,819Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:09,824Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 3 msec
+[INFO ] 2020-01-06T10:52:12,693Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:12,708Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 5 msec
+[INFO ] 2020-01-06T10:52:15,897Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:15,911Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 8 msec
+[INFO ] 2020-01-06T10:52:19,457Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:19,461Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 2 msec
+[INFO ] 2020-01-06T10:52:23,397Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:23,401Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 2 msec
+[INFO ] 2020-01-06T10:52:27,774Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:27,780Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 3 msec
+[INFO ] 2020-01-06T10:52:32,638Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:32,648Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 5 msec
+[INFO ] 2020-01-06T10:52:38,047Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:38,061Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 8 msec
+[INFO ] 2020-01-06T10:52:44,065Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:44,077Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 7 msec
+[INFO ] 2020-01-06T10:52:50,745Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:50,760Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T10:52:58,167Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:52:58,178Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 6 msec
+[INFO ] 2020-01-06T10:53:06,408Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:53:06,416Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 4 msec
+[INFO ] 2020-01-06T10:53:15,558Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:53:15,574Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 6 msec
+[INFO ] 2020-01-06T10:53:25,733Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:53:25,740Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 4 msec
+[INFO ] 2020-01-06T10:53:37,025Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:53:37,039Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T10:53:49,581Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:53:49,596Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T10:54:03,531Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:54:03,549Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 11 msec
+[INFO ] 2020-01-06T10:54:19,032Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:54:19,047Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 10 msec
+[INFO ] 2020-01-06T10:54:36,249Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:54:36,265Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 11 msec
+[INFO ] 2020-01-06T10:54:55,377Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:54:55,391Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T10:55:16,626Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:55:16,632Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 3 msec
+[INFO ] 2020-01-06T10:55:40,223Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:55:40,237Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T10:56:06,451Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:56:06,456Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 3 msec
+[INFO ] 2020-01-06T10:56:35,581Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:56:35,594Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 8 msec
+[INFO ] 2020-01-06T10:57:07,957Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:57:07,973Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T10:57:43,931Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:57:43,935Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 2 msec
+[INFO ] 2020-01-06T10:58:23,885Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:58:23,899Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T10:59:08,291Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:59:08,304Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 8 msec
+[INFO ] 2020-01-06T10:59:57,665Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T10:59:57,679Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 9 msec
+[INFO ] 2020-01-06T11:00:52,483Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T11:00:52,496Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 8 msec
+[INFO ] 2020-01-06T11:01:53,390Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T11:01:53,403Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 8 msec
+[INFO ] 2020-01-06T11:03:01,060Z [main] internal.ReconnectingCordaRPCOps.establishConnectionWithRetry - Connecting to: localhost:10012
+[INFO ] 2020-01-06T11:03:01,074Z [main] internal.RPCClient.logElapsedTime - Failed Startup took 10 msec
