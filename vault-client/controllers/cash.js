@@ -33,7 +33,7 @@ class CashController {
       next();
     }
     catch (e) {
-      common.renderError(res, 'Failed to issue cash', e);
+      common.renderError(res, 'Failed to transfer cash', e);
     }
   }
 }

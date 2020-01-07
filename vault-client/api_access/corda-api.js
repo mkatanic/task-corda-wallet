@@ -7,7 +7,7 @@ class CordaAPI {
   constructor(url) {
     this.url = url;
     this.api = '/api/obligation';
-    this.timeout = 6000;
+    this.timeout = 8000;
   }
 
   /**
