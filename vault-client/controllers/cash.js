@@ -5,9 +5,8 @@ class CashController {
     this.cordaApi = cordaApi;
   }
 
-  /* POST self issue cash. */
+  /* Issues some cash to self. */
   async issueCash(req, res, next) {
-    //console.log('issue cash: ' + req.body.amount + ' ' + req.body.currency);
     try {
       var amount = parseInt(req.body.amount);
       if (!amount || amount < 0) {
@@ -22,9 +21,8 @@ class CashController {
     }
   }
 
-  /* POST transfer cash. */
+  /* Transfer cash to anouther party. */
   async transferCash(req, res, next) {
-    //console.log('transfer cash: ' + req.body.amount + ' ' + req.body.currency);
     try {
       var amount = parseInt(req.body.amount);
       if (!amount || amount < 0) {

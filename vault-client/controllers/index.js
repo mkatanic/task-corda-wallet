@@ -5,7 +5,7 @@ class HomeController {
     this.cordaApi = cordaApi;
   }
 
-  /* GET home page. */
+  /* Renders the home page. */
   async home(req, res, next) {
     try {
       // Get user identity
@@ -16,9 +16,9 @@ class HomeController {
       var obligations = await this.cordaApi.obligations();
       // and peers
       var parties = await this.cordaApi.peers();
-      var i = parties.peers.indexOf("Notary")
+      var i = parties.peers.indexOf('Notary');
       if (i > -1)
-        parties.peers.splice(i, 1)
+        parties.peers.splice(i, 1);
 
       var pageData = {
         cash: Object.values(cash).map(c => common.crateCurrencyObject(c)),
