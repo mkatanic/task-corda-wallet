@@ -1,10 +1,15 @@
 # Dependency directories
 vault-client/node_modules/
 
-#packege.lock
+# packege.lock
 vault-client/package-lock.json
 
-#Build directories
+# Build directories
 obligation-cordapp/kotlin-source/build/
 obligation-cordapp/java-source/build/
 obligation-cordapp/build
+
+# IDE settings
+obligation-cordapp/.gradle
+obligation-cordapp/.idea
+obligation-cordapp/.vscode
